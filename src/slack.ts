@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 export const zPublishSnsToSlackMessage = z.object({
   token: z.string(),
-  chanel: z.string(),
+  channel: z.string(),
   message: z.string()
 });
 
