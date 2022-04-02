@@ -10,6 +10,7 @@ export const zPunchWorkInput = z.object({
   token: z.string().optional(),
   channel: z.string().optional(),
   workType: zWorkType,
+  obcDryRun: z.boolean().optional(),
 });
 
 export type WorkType = z.infer<typeof zWorkType>
